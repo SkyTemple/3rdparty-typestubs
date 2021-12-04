@@ -4,9 +4,6 @@ on: [push, pull_request]
 
 jobs:
   build:
-    needs:
-      - test
-      - typechecks
     runs-on: ubuntu-latest
     name: Build the Python wheel
     steps:
