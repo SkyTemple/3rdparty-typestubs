@@ -1,0 +1,4 @@
+include igraph/py.typed
+recursive-include igraph *.pyi
+include ndspy/py.typed
+recursive-include ndspy *.pyi

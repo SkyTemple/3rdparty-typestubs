@@ -1,14 +1,17 @@
-__version__ = '1.0.0.post2'
+__version__ = '1.1.0'
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='skytemple-3rdparty-typestubs',
     version=__version__,
-    packages=['ndspy'],
-    package_data={'ndspy': ['py.typed', '*.pyi']},
+    packages=['ndspy', 'igraph'],
+    package_data={
+        'igraph': ['py.typed', '*.pyi'],
+        'ndspy': ['py.typed', '*.pyi']
+    },
     description='(Minimal) PEP 561 type stubs for libraries SkyTemple uses',
-    url='https://github.com/SkyTemple/skytemple_/',
+    url='https://github.com/SkyTemple/3rdparty-typestubs/',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Programming Language :: Python',
